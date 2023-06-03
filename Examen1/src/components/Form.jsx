@@ -28,6 +28,7 @@ const Form = ({ onSubmit }) => {
         Color:
         <input type="text" value={color} onChange={(e) => setColor(e.target.value)} />
       </label>
+      {error ? <p>{error}</p>: undefined}
       <br />
       <button type="submit">Enviar</button>
     </form>
