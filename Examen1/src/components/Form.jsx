@@ -9,8 +9,8 @@ const Form = ({ onSubmit }) => {
     e.preventDefault();
     if (modelo.trim().length < 3 || color.trim().length < 6) {
 
-        console.error("Debe ingresar un modelo valido")
-        setError("Debe ingresar un modelo valido")
+        console.error("Por favor chequear que la información sea correcta")
+        setError("Por favor chequear que la información sea correcta")
     } else {
       onSubmit({ modelo, color });
     }
